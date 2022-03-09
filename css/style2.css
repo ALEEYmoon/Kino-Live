@@ -24,9 +24,6 @@ body header a#navbar-brand.button.hvr-grow {
 body header .navbar.Text.fs-5.fw-bolder {
   margin-top: 2%;
 }
-body header li#Search.nav-item {
-  margin-top: 4%;
-}
 @media (min-width: 768px) {
   body header li#Search.nav-item {
     margin-top: 1%;
@@ -41,6 +38,18 @@ body header li#Search.nav-item {
   body header li#Search.nav-item {
     margin-top: 0%;
     margin-bottom: 0%;
+  }
+}
+@media (min-width: 1399px) {
+  body header li#Search.nav-item input {
+    margin-right: 0;
+    width: 88%;
+  }
+}
+@media (min-width: 1399px) {
+  body header li#Search.nav-item form.d-flex {
+    margin-top: 10%;
+    margin-left: 10%;
   }
 }
 @media (min-width: 375px) {
