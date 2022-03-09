@@ -1,0 +1,582 @@
+body {
+  font-size: 1.2em;
+  background-color: #212529;
+}
+a, a:hover {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+h5.card-title {
+  color: #ffffff;
+}
+p.card-text {
+  color: #b1b1b1;
+}
+#subscribe_text.row {
+  margin-top: 1%;
+}
+.btn.btn-primary {
+  margin-top: 2%;
+  background-color: #000000;
+  border-color: #ffc107;
+}
+#Rec_Text.col-xxl-12 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+#HomePage_DescriptionKinoLive.row {
+  margin-top: 5%;
+}
+footer {
+  margin-top: 0;
+}
+li.list-group-item {
+  border: none;
+  height: 2rem;
+  background-color: #212529;
+}
+li.list-group-item p {
+  color: #7e7e7e;
+  font-size: 1rem;
+}
+.card {
+  height: 503px;
+}
+.card{
+  background-color: #212529;
+}
+
+@media only screen and (max-width: 1400px) {
+  
+  .card {
+      height: 640px;
+      align-items: center;
+  }
+  img.card-img {
+      width: 400px;
+      height: 550px;
+      align-items: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card {
+      height: 480px;
+      width: 404px;
+      align-items: center;
+      margin: auto 15%;
+  }
+  img.card-img {
+      width: 400px;
+      height: 400px;
+      
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .card {
+      height: 380px;
+      width: 304px;
+      align-items: center;
+      margin-left: 15%;
+  }
+  img.card-img {
+      width: 300px;
+      height: 300px;
+      
+  }
+}
+@media only screen and (max-width: 994px) {
+  .card {
+      height: 350px;
+      align-items: center;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .card {
+      height: 480px;
+      width: 250px;
+      align-items: center;
+  }
+  img.card-img {
+      width: 297px;
+      height: 400px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .card {
+      height: 500px;
+      width: 330px;
+      align-items: center;
+      margin-left: 20%;
+  }
+  img.card-img {
+      width: 327px;
+      height: 350px;
+      
+  }
+}
+@media only screen and (max-width: 414px) {
+  .card {
+      height: 480px;
+      width: 250px;
+      align-items: center;
+  }
+  img.card-img {
+      width: 297px;
+      height: 400px;
+  }
+
+}
+@media only screen and (max-width: 375px) {
+  .card {
+      height: 400px;
+      width: 220px;
+      align-items: center;
+  }
+  img.card-img {
+      width: 218px;
+      height: 320px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .card {
+      height: 400px;
+      width: 180px;
+      align-items: center;
+  }
+  img.card-img {
+      width: 178px;
+      height: 320px;
+  }
+}
+hr {
+  color: rgb(141, 141, 141);
+  margin:0 0 0 0;
+}
+li.list-group-item p.lh-sm {
+  color: #ffffff;
+}
+li.list-group-item p {
+  color: #ffffff;
+  margin-bottom: 5%;
+}
+
+.container.footer {
+  margin-top: 10%;
+}
+#Footer_content_center.col-xxl-4.col-md-4.col-sm-4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.card-body p {
+  margin: 0 0 0 0;
+}
+#btn_group_footer.container-fluid {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.container-fluid.p-3 {
+  color: white;
+}
+p.lh-sm.fs-5 {
+  margin: 0 0 0 0;
+}
+
+.btn-outline-primary {
+  color: #ffffff;
+  border-color: #ffc107;
+}
+.btn:hover {
+  color: #a5a327;
+}
+ul.list-group.list-group-flush.text-center.p-5 {
+  margin-bottom: 5%;
+}
+#Services_support.container {
+  color: white;
+  margin-top: 0;
+}
+p.lh-sm.fs-5.services {
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #ffec81;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255, 253, 143);
+}
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.13);
+}
+#accordion_description.container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+.accordion-item {
+  background-color: #fffeeb;
+}
+.card-body {
+  background-color: #212529;
+  color: white;
+}
+.card.w-100.h-100 {
+  border: none;
+}
+img#rubles_icon {
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+img#surprise_icon {
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+.button {
+  display: inline-block;
+  padding: 1em;
+  background-color: #444444;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+
+}
+input.form-control.me-2.w-50 {
+  height: 60%;
+}
+a#Search_Header_Button.btn.btn-outline-warning.hvr-grow.text-center {
+  height: 60%;
+}
+a#navbar-brand.button.hvr-grow {
+    text-decoration: none;
+            color: white;
+            margin-right: 3%;
+    background-color: #1f1f1f1f;
+}
+li#Search.nav-item { 
+  @media (min-width: 991px) {
+      margin-bottom: 2%;
+  } 
+  @media (min-width: 1400px) {
+      margin-bottom: 0%;
+  }
+  form.d-flex {
+      margin-top: 10%;
+  }
+}
+a#Promo-Code_Button.button.hvr-sweep-to-left.text-center {
+  height: 92%;
+}
+.card.w-60.h-10 {
+  background-color: #212529;
+  border: none;
+  transition: all ease-in-out 0.3s;
+}
+#MultFilms_Page.container {
+  margin-top: 5%;
+}
+.section-title {
+  margin-bottom: 3%;
+}
+form.d-flex {
+  height: 80%;
+  
+}
+a#MultFilms_Page_Button.button.hvr-grow {
+  background-color: #212529;
+  padding: 0;
+  width: 100%;
+}
+@media only screen and (min-width: 1921px) {
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+       width: 100%;
+  }
+  img#MultFilms_Img {
+   width: 100%;
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description {
+       background-color: #1f1f1f;
+   }
+   p#MultFilms_Description_Kak {
+       background-color: #1f1f1f;
+   }
+   p#MultFilms_Description_Shrek {
+       background-color: #1f1f1f;
+   }
+   p#MultFilms_Description_Dusha {
+       background-color: #1f1f1f;
+   }
+   p#MultFilms_Description_Atacka {
+       background-color: #1f1f1f;
+   }
+ }    
+@media only screen and (max-width: 1920px) {
+ a#MultFilms_Page_Button.button.hvr-grow {
+     background-color: #212529;
+     padding: 0;
+      width: 100%;
+ }
+ img#MultFilms_Img {
+  width: 100%;
+ }
+ p#MultFilms_Description {
+     background-color: #1f1f1f;
+ }
+ p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+}    
+
+@media only screen and (max-width: 1440px) {
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+      width: 100%;
+  }
+  .MultFilms_Img {
+
+  }
+  img#MultFilms_Img {
+
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+}    
+@media only screen and (max-width: 1024px) {
+  .card {
+
+  }
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+
+  }
+  .MultFilms_Img {
+
+  }
+  img#MultFilms_Img {
+
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+}    
+@media only screen and (max-width: 768px) {
+  .card {
+
+  }
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+
+  }
+  .MultFilms_Img {
+
+  }
+  img#MultFilms_Img {
+
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+} 
+@media only screen and (max-width: 575px) {
+  .card {
+
+  }
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+
+  }
+  .MultFilms_Img {
+
+  }
+  img#MultFilms_Img {
+
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+} 
+@media only screen and (max-width: 425px) {
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+
+  }
+  .MultFilms_Img {
+
+  }
+  img#MultFilms_Img {
+
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+} 
+@media only screen and (max-width: 414px) {
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+
+  }
+  .MultFilms_Img {
+
+  }
+  img#MultFilms_Img {
+
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+} 
+@media only screen and (max-width: 375px) {
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+  }
+  .MultFilms_Img {
+  }
+  img#MultFilms_Img {
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+} 
+@media only screen and (max-width: 320px) {
+  .card {
+  }
+  a#MultFilms_Page_Button.button.hvr-grow {
+      background-color: #212529;
+      padding: 0;
+  }
+  .MultFilms_Img {
+  }
+  img#MultFilms_Img {
+  }
+  p#MultFilms_Description {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Kak {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Shrek {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Dusha {
+      background-color: #1f1f1f;
+  }
+  p#MultFilms_Description_Atacka {
+      background-color: #1f1f1f;
+  }
+} 

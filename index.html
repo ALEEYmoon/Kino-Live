@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Кино Лайв</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name = "description" content="Кино Лайв - это портал о кино!">
+	<meta name="keywords" content="фильмы, фильмы онлайн, hd">
+	<link rel="shortcut icon" href="img/film-slate.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/style_index.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+	<body  style="font-family: 'Oswald', sans-serif;">
+		<header style="background-color: $bg-header">
+			<div class="container">
+				<nav class="navbar navbar-expand-xxl navbar-dark">
+							<a class="button hvr-grow" id="navbar-brand" href="index.html"><h1 class="fw-bold"><h1><span style="color: #ffc107;">К</span>ино <span style="color: #ffc107;">Л</span>айв</h1></a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-3 mb-lg-0">
+								<div class="navbar Text fs-5 fw-bolder">
+									<li class="nav-item">
+										<a class="nav-link active" aria-current="page" href="index.html"><h4>Главная</h4></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="films.html"><h4>Фильмы</h4></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="serials.html"><h4>Сериалы</h4></a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="multfilms.html"><h4>Мультфильмы</h4></a>
+									</li>
+								</div>	
+								<li class="nav-item" id="Search">
+										<form class="d-flex">
+											<input class="form-control me-2 w-50" type="search" placeholder="Фильмы, сериалы, рейтинги" aria-label="Search">
+											<a href="" class="nav-link"></a>
+												<a href="" type="button" class="btn btn-outline-warning hvr-grow text-center" id="Search_Header_Button"><h5>Поиск</h5></a>
+											</a>	
+										</form>
+								</li>
+							</ul>	
+								<div class="d-flex" id="SignInRegistration">
+										<button type="button" class="btn btn-outline-warning login" data-bs-toggle="modal" data-bs-target="#SignInModal">Войти</button>
+										<button type="button" class="btn btn-warning registration" data-bs-toggle="modal" data-bs-target="#RegistrationModal" id="RegistrationButton">Регистрация</button>
+						
+				</nav>
+						<!-- Modal -->
+							<div class="modal fade" id="SignInModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title" id="SignInModalLabel">Вход</h4>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+										</div>		
+											<div class="modal-body">
+												<form action="">
+													<div class="row">
+														<div class="col-sm-12">
+															<h6>Email</h6>
+														</div>
+													</div>	
+													<div class="row mb-4">	
+														<div class="col-sm-12">
+															<input type="email" class="form-control" id="inputEmail" placeholder="Ваш email">
+														</div>
+													</div>
+													<div class="row">
+														<h6>Пароль</h6>
+													</div>	
+													<div class="row-mb-5">
+														<div class="col-sm-12">
+															<input type="password" class="form-control" id="inputPass" placeholder="Ваш пароль">
+														</div>
+													</div>
+													<fieldset style="margin-top: 2%;">	
+														<div class="row mb-2">
+															<div class="col-sm-10">
+																<div class="form-check">
+																	<input type="checkbox" class="form-check-input" id="gridCheck">
+																	<label for="gridCheck" class="form-check-label">Запомнить пароль при входе</label>
+																</div>
+															</div>
+														</div>
+													</fieldset>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button class="btn btn-dark"><a href="">Войти</a></button>
+											</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="RegistrationModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title" id="RegistrationModalLabel">Регистрация</h4>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+										</div>		
+											<div class="modal-body">
+												<form action="">
+													<div class="row">
+														<div class="col-sm-12">
+															<h6>Ваше имя</h6>
+														</div>
+													</div>	
+													<div class="row mb-3">	
+														<div class="col-sm-12">
+															<input type="text" class="form-control" id="inputEmail" placeholder="Имя">
+														</div>
+													</div>
+													<div class="row">
+														<h6> Ваш email</h6>
+													</div>	
+													<div class="row mb-3">
+														<div class="col-sm-12">
+															<input type="email" class="form-control" id="inputPass" placeholder="Ваш email">
+														</div>
+													</div>
+													<div class="row">
+														<h6>Логин</h6>
+													</div>	
+													<div class="row mb-3">
+														<div class="col-sm-12">
+															<input type="text" class="form-control" id="inputPass" placeholder="Ваш логин">
+														</div>
+													</div>
+													<div class="row">
+														<h6>Пароль</h6>
+													</div>	
+													<div class="row mb-3">
+														<div class="col-sm-12">
+															<input type="password" class="form-control" id="inputPass" placeholder="Ваш пароль">
+														</div>
+													</div>
+													<div class="row">
+														<h6>Подтвердите пароль</h6>
+													</div>	
+													<div class="row mb-3">
+														<div class="col-sm-12">
+															<input type="password" class="form-control" id="inputPass" placeholder="Подтверждение пароля">
+														</div>
+													</div>
+													<fieldset style="margin-top: 2%;">	
+														<div class="row mb-2">
+															<div class="col-sm-10">
+																<div class="form-check">
+																	<input type="checkbox" class="form-check-input" id="gridCheck">
+																	<label for="gridCheck" class="form-check-label">Запомнить пароль при входе</label>
+																</div>
+															</div>
+														</div>
+													</fieldset>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button class="btn btn-dark"><a href="">Регистрация</a></button>
+											</div>
+									</div>
+								</div>
+							</div>
+						<!-- Modal -->
+			</div>
+		</header>			
+			<main>	
+						<div class="container" id="HomePage">
+							<div class="row" id="HomePage_Up_Carousel Subscription">
+								<div class="col-xxl-12" id="HomePage_TopCarouselSlide">
+									<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+										  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+										</div>
+										<div class="carousel-inner">
+										  <div class="carousel-item active">
+											<img src="img/Матрица.jpg" class="d-block w-100" alt="Матрица">
+											<div class="carousel-caption d-none d-md-block">
+											  <h5>Матрица</h5>
+											  <p style="color: #ff6565;"></p>
+											</div>
+										  </div>
+										  <div class="carousel-item">
+											<img src="img/Главный герой.jpg" class="d-block w-100" alt="Главный герой">
+										  </div>
+										  <div class="carousel-item">
+											<img src="img/Гарри поттер 20 лет спустя.jpg" class="d-block w-100" alt="Гарри поттер 20 лет спустя">
+											<div class="carousel-caption d-none d-md-block">
+											  <h5>Гарри поттер 20 лет спустя</h5>
+											  <p>Актеры великой франшизы встречаются в школе магии. Архивные кадры, редкие интервью и ностальгическая атмосфера</p>
+											</div>
+										  </div>
+										</div>
+										<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+										  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										  <span class="visually-hidden">Предыдущий</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+										  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										  <span class="visually-hidden">Следующий</span>
+										</button>
+									  </div>
+								</div>
+							</div>
+							<div class="row" id="subscribe_text">
+								<div class="col-xxl-6 col-md-6 col-6" id="HomePage_TopSubscription">
+									<div class="d-grid gap-2">
+										<a href="#" class="button hvr-sweep-to-right text-center" id="Subscription_Button"><img src="img/рубль_иконка.png" id="rubles_icon" alt="">Месяц подписки за 1 ₽</a>
+									</div>
+								</div>
+								<div class="col-xxl-6 col-md-6 col-6" id="HomePage_TopSubscription">	
+									<div class="d-grid gap-2">
+										<a href="#" class="button hvr-sweep-to-left text-center" id="Promo-Code_Button"><img src="img/Подарок_Картинка.png" id="surprise_icon">Активация промо-кода</a>
+									</div>
+								</div>
+							</div>	
+								<div class="row" id="HomePage_Rec">
+									<div class="col-xxl-12" id="Rec_Text">
+										<h5 style="color: #ffffff;">Рекомендуем вам посмотреть</h5>
+										<h5 style="color: #a0a0a0;">Чем больше смотрите, тем лучше рекомендации</h5>
+									</div>
+													<div class="container" id="Rec_Page_card">
+														<div class="row" id="MultFilms_row">
+															<div class="col-xxl-3 col-md-3 col-6 allign-items-center">
+																<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+																	<div class="MultFilms_Img">
+																		<img src="img/Турист_Карточка.jpg" id="MultFilms_Img" alt="">
+																	</div>
+																	<div class="content text-center">
+																		<h5 class="text-truncate">Турист</h5>
+																		<p id="MultFilms_Description">Бесплатно</p>
+																	</div>
+																</a>
+															</div>	
+															<div class="col-xxl-3 col-md-3 col-6">
+																<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+																	<div class="MultFilms_Img">
+																		<img src="img/Гарри поттер 20 лет спустя_Карточка.jpg" id="MultFilms_Img" alt="">
+																	</div>
+																	<div class="content text-center">
+																		<h5 class="text-truncate">Гарри поттер: 20 лет спустя</h5>
+																		<p id="MultFilms_Description_Kak">С подпиской</p>
+																	</div>
+																</a>
+															</div>
+															<div class="col-xxl-3 col-md-3 col-6 allign-items-center">
+																<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+																	<div class="MultFilms_Img">
+																		<img src="https://www.kino-teatr.ru/movie/posters/big/5/130165.jpg" id="MultFilms_Img" alt="">
+																	</div>
+																	<div class="content text-center">
+																		<h5 class="text-truncate">Пепел самый чистый белый</h5>
+																		<p id="MultFilms_Description_Shrek">Бесплатно</p>
+																	</div>
+																</a>
+															</div>
+															<div class="col-xxl-3 col-md-3 col-6 allign-items-center">
+																<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+																	<div class="MultFilms_Img">
+																		<img src="img/Начать с нуля_Карточка.jpg" id="MultFilms_Img" alt="">
+																	</div>
+																	<div class="content text-center">
+																		<h5 class="text-truncate">Начать с нуля</h5>
+																		<p id="MultFilms_Description_Dusha">С подпиской</p>
+																	</div>
+																</a>
+															</div>
+													</div>
+														
+							<div class="container-fluid" id="HomePage_DescriptionKinoLive">
+								<div class="row" id="HomePage_DescriptionKinoLive">
+									<div class="col-xxl-12">
+										<div class="container" id="accordion_description">
+											<div class="accordion accordion-flush" id="accordionFlushExample">
+												<div class="accordion-item">
+													<h2 class="accordion-header" id="flush-headingOne">
+														<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+														Онлайн-кинотетар Кино Лайв - это ...
+														</button>
+													</h2>
+													<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+														<div class="accordion-body">Каждый день миллионы людей ищут фильмы онлайн, и никто не хочет усложнять себе жизнь – и вы наверняка один из них! А раз так, то Кино Лайв – это именно тот ресурс, который вам нужен. От лучших кинолент в HD-качестве вас отделяет буквально один клик. Мы не просто освобождаем от необходимости идти в кинотеатр или изучать программу телепередач – у посетителей нашего ресурса гораздо больше возможностей.
+
+															Видеотека Кино Лайв – это постоянно пополняющаяся коллекция в рунете, которая насчитывает более 60 тысяч отечественного и зарубежного контента, доступного для просмотра онлайн. Мы первыми в России подписали контракты с крупнейшими голливудскими студиями (Walt Disney, Warner Bros., Sony, 20th Century Fox, Universal, Paramount, MGM и другими) и на постоянной основе сотрудничаем с крупнейшими российскими компаниями и телеканалами.
+															
+															Онлайн-кинотеатр Kinolive.ru – это:
+															
+															уникальная рекомендательная система, учитывающая ваши предпочтения и предлагающая посмотреть именно то, что точно придется вам по душе;
+															просмотр в одно касание на любом из устройств, подключенном к вашему Кино Лайв-аккаунту – от смартфонов до телевизоров с технологией Smart TV;
+															возможность скачивать в память мобильного устройства лицензионный контент и смотреть его без доступа к Интернету;
+															уникальные условия и преимущества для обладателей подписки Кино Лайв, делающей кинопросмотр комфортным и приятным;
+															удобная и продвинутая система уведомлений, вы не пропустите выход крутого обсуждаемого блокбастера – мы известим о появлении подходящим для вас способом;
+															возможность добавлять фильмы в «смотреть позже», чтобы вернуться к ним в свободное время;
+															контент, для просмотра которого не требуется устанавливать видеоплееры или искать кодеки;
+															просмотр онлайн контента хорошего разрешения без регистрации и смс.
+															Откройте для себя возможность смотреть фильмы онлайн бесплатно в отличном качестве с кинотеатром Кино Лайв!</div>
+													</div>
+													</div>
+												</div>
+											</div>
+										</div>	
+									</div>
+								</div>	
+							</div>
+								<section>		
+									<div class="container" id="MultFilms_Page">
+										<div class="section-title">
+											<h4 style="color: #ffffff;">Мультфильмы</h4>
+										</div>	
+										<div class="row" id="MultFilms_row">
+											<div class="col-xxl-2 col-md-4 col-6 allign-items-center">
+												<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+													<div class="MultFilms_Img">
+														<img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/2af3423b-054e-4359-b9a7-ed36c163214a/300x450" id="MultFilms_Img" alt="">
+													</div>
+													<div class="content text-center">
+														<h5 class="text-truncate">Тайная жизнь домашних животных</h5>
+														<p id="MultFilms_Description">С подпиской</p>
+													</div>
+												</a>
+											</div>	
+											<div class="col-xxl-2 col-md-4 col-6">
+												<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+													<div class="MultFilms_Img">
+														<img src="https://kinopoisk-ru.clstorage.net/30WVk4323/fd4f999XlQfa/7HGkY61EwPVYLlTA5pLFzZHyub2NYczHGMmA1esAgooD4kCYiCPjO4sOmprFHXXYE0dXqqFvyb7Z_zDOxjHD_-1kIZcctACgubpBlTNSwcxRAsjZSeSohsn8VWAZ84AJIXVi-3qh4f2fOp6bYKiALBdXsq603m3KntyRuNPWdHuOkoQTOXUAlo4sxACFgkcKUnKJm02S_QK4SWKH66CRGCL2IzgLMIAfLDsvPLD5sA52tkB_xBuMKs49N2iR9lbJzXL0UGu1sBcd7xQxpCM0CEITyGmPgy_w2tnDJ_ujUIohdtLa2qDwzyzLXN3ASRJt9NZQ3-SZLNj-fjbL0DUECq3iJWMb1XBmP912w3QRBFlBIaoIb8Ddo9lJIOULouFIAsby-ojQsH3_WWy8A1ti_5Yl4X7EWEz6rQ3FS_P0JDq_YSVjiyYCdLwu1AFH4kXZwJJaWh-CvOFIaBBFi4EjO_Okw1j7kwJMHAl_v6IKMf22pHM-92nMm0yvhIsRlcT4bSDnAOn0ImVMLrWiR6BFGeKDmghuQ_1RSquRBmizYbqwdmKJyKNi_H_JXrzhe3Dsd1dxTqUofPjvbsfJUDYmOExiNcIoBICUD48n8XSQV8kToPg5XCPPMejp8TVbcBGLYhQzakrz0j9OGH7e0MrhnLZnUR9Wy_x4vi03eIIkVZhdo1fxm8cChU5upFE30uRqETP6ua_jTONpC4LkiyEhKZGkApiI03Hu3gpu7oObQa33ZHDelOjviI1N9YkjVWSJXhNncEknE7RNXkbBNoEFK7BAuskMQ10zKmnhJIsAoRvxp8OJ2CDyb93rbw2xmLCP1HXRfpSZnApMTlSJgkVWOd-Ch4L4hUDU7j80EGbAZumhMXqJTdN8wWsqsFZZIXFqoESBaGtTMO2_aw1tormS33bmUL6HCQ5or24VypD1pRhsI-QwWpWCBk3t97LWgnR44zPo6v0gn7DIylEV6IDiWiGHgYrYAjOefopM3KF4Qj7WdmBtNMr8Gd2_JdvAxeZbfRHlA_mVQEQNTeXSxXK16YKCestPoryQSWsi1Qugg3qSZbGa-CATH485Hd6yqJIN9nTTbLdI3mv-rTcrg9dkWX-wNjPq1HGGru9U4USgp-swMKpJXcLNM-nYYCWaYTKpQsWTiLlTMvxtaK2coKkx3kbl0S9Fylwp_R4lC2MGJZh_UZUQSgbgVh_vtfOGwPcr4kGpuA0hvRH4yLKEeSMTSBNk0RsIwLPMTVsfzpFoUh5U17GflxmcGF0OVZsBh1WJ3FLF0gu1YeUMXxXTZDKHyWFQ-Vv_A_6Si-txZ_jgAKgztQBZeCCyfeyq_JzwCmJOpcciDZVrrFr9rxQZUiRGiN0ChQBJNPI2XP8GcyQhhKkBkfqpT8Kf8Unosnfa8RI4MmQieTtSw0_uaIxtYnsD3Kf1YQ7FCqxqrd1EqrMn1egfArYSK_UQ5Q-eVrLGsmcb4fG7aG3BHVJKyTInSrECi1NEQls6gfMNnVjcTLJLAD12JTFeFUh9qN0dVUnAxBRoHkL2w4l0YNYdzYaQN-ClCbBR23ttcx6CmksgBgrzIEly97DI-CICzi47jrySCMJOFwYQXWXqnEhPjvd5AydUmI8jV9MZ5XL0nU1VotSj9BjzYcvJvmN-4ev6sMS6gWJ6ESYRmphjgd4eek2toErwfPT3EN6WKH2aT_0kmTEFRTtfQ8QDqjVyZjxfFlJFgBd6UWJYmQwyvAJaS2D0OhJDGxHHMhjJQwHtjynP36N5gF4E1WBdxRv-KX3OxvlzJaSKXBMVIHskQ8YO7pegVlOUO7BS-GuMQX1TW9mgpgpSoonj5-NqOPKCzby53o7xiMFddmdTTTZK7XqP3ff7I7SH6q1BFWM4pzAnfPzHUTRQJJuR42ib7jFMgvppgNYLArEJIzYxazjjwj9OOR2NQWtyP8U3sy3WWvxY_YwGiXGXNRuPo6XCiCSzh1-_pIKEoDY6UQJJ2f3y7CLKOdBXuFEiWBHEUVhJA-I_j0vfT2KK0v7HVGC9BUp-y65MFrmCF3Z73dGW4tgnEAVuPzRxJbH2emHiKWkt00_i2rmhVFgxEksB9bEKGPND_zzrb74SCNFe9cVzLBTr3GuODaSIg0e12F0BREE71uE27W7n8qeiF8th8hnJ7VLv0ZqIEOe5kWCJUQZw2jqhoA_em5yNExkD3YYHYz1FGD4Jrc-nysEXpjn_UvXAiDaQZtxvNcDm4ZTpkwLaOmwwzVJb-VOkuxJhO-BmUrpJoTMtHlpMfzFJkv5nNiFuJxo-SKyuFTnz5ccYnrFEAIg1UaUOPYZDpMM2GVIRmGvvgu6haxoAxbkgQloAx_KI-nDh7ywZX31i27B_pSZQnNSq3GkcrUUJgURkG-5QJMP5t1InHd-GUYRS5ykAsqoqHYKMo1jrs0VaENG4AbaBGBmT0X5MmX0fYKgiHBQXUv4Wqh-pj73lmwGHxph8ANUiijWyRLz85VKWAAYaQ0FoCx2in7P6u1FkiSBQKSE2cSlqYpM_DKn8vhNLYf63VnFe5yv8W90ON3kBxCQIXCAmADiXkgSOnPQTpFA16dFyOWtNsN3RuFkAhirTY7qxdfGoqpEjL5wpPH6hmNLsp9XC7JaanUt9jmXKgyZVKj1i5QBL5bBFzHz0gQYx9TvQAPgqLiG_s9opsrcIYECJA8bzCdszA_9MqY5PoVhATjX18J8mKh5bna_XKLHHNIttwYThqJUAhz_vtdNkIGVL06OIWT6A7xJYOAFV6UDSK4AV8pho0vJMHmv_jSOJAnz2NECvpLqf-y4vVuqDlcSpvgF1gil1UDYcHweBdoCFy9MxirgvM11DqsiBt4qT4kgwJIKoeHEyfE56rTyAmyPONkXSvqV53FmfjnVa0YfkKo2jR2JoBNEUjt9kUueRF1kSI7mZPhF_cNjIQ1fIEAFIMzbiyijzcX2si0-usUtwXMRkAW6lyh77o#DSD" id="MultFilms_Img" alt="">
+													</div>
+													<div class="content text-center">
+														<h5 class="text-truncate">Как приручить дракона</h5>
+														<p id="MultFilms_Description_Kak">Бесплатно</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-xxl-2 col-md-4 col-6 allign-items-center">
+												<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+													<div class="MultFilms_Img">
+														<img src="https://kinopoisk-ru.clstorage.net/30WVk4323/fd4f999XlQfa/7HGkY61EwPVYLlTA5pLFzZHyub2NYczHGMmA1esAgooD4kCYiCPjO4teeuqFbZVIE2cXSuR_6duJ-nDbg3HD_5g0IZKMwYWguYrR5VNXsTxxR33JOeSohsn8VWAZ84AJIXVi-3qh4f2fOp6bYKiALBdXsq603m3KntyRuNPWdHuOkoQTOXUAlo4sxACFgkcKUnKJm02S_QK4SWKH66CRGCL2IzgLMIAfLDsvPLD5sA52tkB_xBuMKs49N2iR9lbJzXL0UGu1sBcd7xQxpCM0CEITyGmPgy_w2tnDJ_ujUIohdtLa2qDwzyzLXN3ASRJt9NZQ3-SZLNj-fjbL0DUECq3iJWMb1XBmP912w3QRBFlBIaoIb8Ddo9lJIOULouFIAsby-ojQsH3_WWy8A1ti_5Yl4X7EWEz6rQ3FS_P0JDq_YSVjiyYCdLwu1AFH4kXZwJJaWh-CvOFIaBBFi4EjO_Okw1j7kwJMHAl_v6IKMf22pHM-92nMm0yvhIsRlcT4bSDnAOn0ImVMLrWiR6BFGeKDmghuQ_1RSquRBmizYbqwdmKJyKNi_H_JXrzhe3Dsd1dxTqUofPjvbsfJUDYmOExiNcIoBICUD48n8XSQV8kToPg5XCPPMejp8TVbcBGLYhQzakrz0j9OGH7e0MrhnLZnUR9Wy_x4vi03eIIkVZhdo1fxm8cChU5upFE30uRqETP6ua_jTONpC4LkiyEhKZGkApiI03Hu3gpu7oObQa33ZHDelOjviI1N9YkjVWSJXhNncEknE7RNXkbBNoEFK7BAuskMQ10zKmnhJIsAoRvxp8OJ2CDyb93rbw2xmLCP1HXRfpSZnApMTlSJgkVWOd-Ch4L4hUDU7j80EGbAZumhMXqJTdN8wWsqsFZZIXFqoESBaGtTMO2_aw1tormS33bmUL6HCQ5or24VypD1pRhsI-QwWpWCBk3t97LWgnR44zPo6v0gn7DIylEV6IDiWiGHgYrYAjOefopM3KF4Qj7WdmBtNMr8Gd2_JdvAxeZbfRHlA_mVQEQNTeXSxXK16YKCestPoryQSWsi1Qugg3qSZbGa-CATH485Hd6yqJIN9nTTbLdI3mv-rTcrg9dkWX-wNjPq1HGGru9U4USgp-swMKpJXcLNM-nYYCWaYTKpQsWTiLlTMvxtaK2coKkx3kbl0S9Fylwp_R4lC2MGJZh_UZUQSgbgVh_vtfOGwPcr4kGpuA0hvRH4yLKEeSMTSBNk0RsIwLPMTVsfzpFoUh5U17GflxmcGF0OVZsBh1WJ3FLF0gu1YeUMXxXTZDKHyWFQ-Vv_A_6Si-txZ_jgAKgztQBZeCCyfeyq_JzwCmJOpcciDZVrrFr9rxQZUiRGiN0ChQBJNPI2XP8GcyQhhKkBkfqpT8Kf8Unosnfa8RI4MmQieTtSw0_uaIxtYnsD3Kf1YQ7FCqxqrd1EqrMn1egfArYSK_UQ5Q-eVrLGsmcb4fG7aG3BHVJKyTInSrECi1NEQls6gfMNnVjcTLJLAD12JTFeFUh9qN0dVUnAxBRoHkL2w4l0YNYdzYaQN-ClCbBR23ttcx6CmksgBgrzIEly97DI-CICzi47jrySCMJOFwYQXWXqnEhPjvd5AydUmI8jV9MZ5XL0nU1VotSj9BjzYcvJvmN-4ev6sMS6gWJ6ESYRmphjgd4eek2toErwfPT3EN6WKH2aT_0kmTEFRTtfQ8QDqjVyZjxfFlJFgBd6UWJYmQwyvAJaS2D0OhJDGxHHMhjJQwHtjynP36N5gF4E1WBdxRv-KX3OxvlzJaSKXBMVIHskQ8YO7pegVlOUO7BS-GuMQX1TW9mgpgpSoonj5-NqOPKCzby53o7xiMFddmdTTTZK7XqP3ff7I7SH6q1BFWM4pzAnfPzHUTRQJJuR42ib7jFMgvppgNYLArEJIzYxazjjwj9OOR2NQWtyP8U3sy3WWvxY_YwGiXGXNRuPo6XCiCSzh1-_pIKEoDY6UQJJ2f3y7CLKOdBXuFEiWBHEUVhJA-I_j0vfT2KK0v7HVGC9BUp-y65MFrmCF3Z73dGW4tgnEAVuPzRxJbH2emHiKWkt00_i2rmhVFgxEksB9bEKGPND_zzrb74SCNFe9cVzLBTr3GuODaSIg0e12F0BREE71uE27W7n8qeiF8th8hnJ7VLv0ZqIEOe5kWCJUQZw2jqhoA_em5yNExkD3YYHYz1FGD4Jrc-nysEXpjn_UvXAiDaQZtxvNcDm4ZTpkwLaOmwwzVJb-VOkuxJhO-BmUrpJoTMtHlpMfzFJkv5nNiFuJxo-SKyuFTnz5ccYnrFEAIg1UaUOPYZDpMM2GVIRmGvvgu6haxoAxbkgQloAx_KI-nDh7ywZX31i27B_pSZQnNSq3GkcrUUJgURkG-5QJMP5t1InHd-GUYRS5ykAsqoqHYKMo1jrs0VaENG4AbaBGBmT0X5MmX0fYKgiHBQXUv4Wqh-pj73lmwGHxph8ANUiijWyRLz85VKWAAYaQ0FoCx2in7P6u1FkiSBQKSE2cSlqYpM_DKn8vhNLYf63VnFe5yv8W90ON3kBxCQIXCAmADiXkgSOnPQTpFA16dFyOWtNsN3RuFkAhirTY7qxdfGoqpEjL5wpPH6hmNLsp9XC7JaanUt9jmXKgyZVKj1i5QBL5bBFzHz0gQYx9TvQAPgqLiG_s9opsrcIYECJA8bzCdszA_9MqY5PoVhATjX18J8mKh5bna_XKLHHNIttwYThqJUAhz_vtdNkIGVL06OIWT6A7xJYOAFV6UDSK4AV8pho0vJMHmv_jSOJAnz2NECvpLqf-y4vVuqDlcSpvgF1gil1UDYcHweBdoCFy9MxirgvM11DqsiBt4qT4kgwJIKoeHEyfE56rTyAmyPONkXSvqV53FmfjnVa0YfkKo2jR2JoBNEUjt9kUueRF1kSI7mZPhF_cNjIQ1fIEAFIMzbiyijzcX2si0-usUtwXMRkAW6lyh77o#DSD" id="MultFilms_Img" alt="">
+													</div>
+													<div class="content text-center">
+														<h5 class="text-truncate">Шрек 3</h5>
+														<p id="MultFilms_Description_Shrek">Бесплатно</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-xxl-2 col-md-4 col-6 allign-items-center">
+												<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+													<div class="MultFilms_Img">
+														<img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/46cd3630-58af-4ff8-a8b3-0481be5ddc81/600x900" id="MultFilms_Img" alt="">
+													</div>
+													<div class="content text-center">
+														<h5 class="text-truncate">Душа</h5>
+														<p id="MultFilms_Description_Dusha">С подпиской</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-xxl-2 col-md-4 col-6 allign-items-center">
+												<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+													<div class="MultFilms_Img">
+														<img src="https://www.kino-teatr.ru/movie/posters/big/9/146049.jpg" id="MultFilms_Img" alt="">
+													</div>
+													<div class="content text-center">
+														<h5 class="text-truncate">Истребитель демонов: поезд бесконечный</h5>
+														<p id="MultFilms_Description">С подпиской</p>
+													</div>
+												</a>
+											</div>
+											<div class="col-xxl-2 col-md-4 col-6 allign-items-center">
+												<a href="#" class="button hvr-grow" id="MultFilms_Page_Button">
+													<div class="MultFilms_Img">
+														<img src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/70c27684-81cd-49e1-bf39-250b26702864/300x450" id="MultFilms_Img" alt="">
+													</div>
+													<div class="content text-center">
+														<h5 class="text-truncate">Атака Титанов: Финал</h5>
+														<p id="MultFilms_Description_Atacka">С подпиской</p>
+													</div>
+												</a>
+											</div>							
+										</div>
+								</section>																									
+						</div>		
+			</main>
+			<footer>
+				<section class="footer">
+					<div class="container footer">
+						<hr>
+						<div class="row allign-items-center">
+							<div class="col-xxl-4 col-md-4 col-sm-4" id="Footer_content_up">
+								<ul class="list-group list-group-flush text-center p-5">
+									<li class="list-group-item"><p class="lh-sm fs-5">О нас</p></li>
+									<a href=""><li class="list-group-item"><p>О компании</p></li></a>
+									<a href=""><li class="list-group-item"><p>Вакансии</p></li></a>
+									<a href=""><li class="list-group-item"><p>Программа бета-тестировани</p>е</li></a>
+									<a href=""><li class="list-group-item"><p>Информация для партнеров</p></li></a>
+									<a href=""><li class="list-group-item"><p>Размещение рекламы</p></li></a>
+									<a href=""><li class="list-group-item"><p>Пользовательское соглашение</p></li></a>
+									<a href=""><li class="list-group-item"><p>Политика конфиденциальности</p></li></a>
+									<a href=""><li class="list-group-item"><p>Комплаенс</p></li></a>
+								  </ul>
+							</div>
+							<div class="col-xxl-4 col-md-4 col-sm-4" id="Footer_content_center">
+								<ul class="list-group list-group-flush text-center p-5">
+									<li class="list-group-item"><p class="lh-sm fs-5">Разделы</p></li>
+									<a href=""><li class="list-group-item"><p>Мой Кино Лайв</p></li></a>
+									<a href=""><li class="list-group-item"><p>Что нового</p></li></a>
+									<a href=""><li class="list-group-item"><p>Фильмы</p>е</li></a>
+									<a href=""><li class="list-group-item"><p>Сериалы</p></li></a>
+									<a href=""><li class="list-group-item"><p>Мультфильмы</p></li></a>
+									<a href=""><li class="list-group-item"><p>TV+</p></li></a>
+									<a href=""><li class="list-group-item"><p>Что посмотреть</p></li></a>
+									<a href=""><li class="list-group-item"><p class="subscription text-warning">Активация промо-кода</p></li></a>
+								  </ul>
+							</div>
+							<div class="col-xxl-4 col-md-4 col-sm-6" id="Footer_content_down">
+								<div class="container pt-5" id="Services_support">
+									<p class="lh-sm fs-5 services">Служба поддержки</p>
+									<p class="fs-6">Мы всегда готовы вам помочь. Наши операторы онлайн 24/7</p>
+								</div>
+								<div class="container-fluid p-3 text-center">
+									
+										<a href=""><button type="button" class="btn btn-outline-primary"><p class="lh-sm fs-5">Написать в чате</p></button></a>
+										
+								</div>
+								<div class="container-fluid p-3 text-center">
+									<div class="btn-group" role="group" aria-label="Basic outlined example">
+										<a href=""><button type="button" class="btn btn-outline-primary"><img src="img/почта.png" alt=""></button></a>	
+										<a href=""><button type="button" class="btn btn-outline-primary"><img src="img/телеграм.png" alt=""></button></a>	
+										<a href=""><button type="button" class="btn btn-outline-primary"><img src="img/facebook.png" alt=""></button></a>	
+										<a href=""><button type="button" class="btn btn-outline-primary"><img src="img/телефон.png" alt=""></button></a>	
+									</div>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</section>
+			</footer>
+	</body>
+</html>

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body {
+  font-size: 1em;
+  background-color: #212529;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body header {
+  background-color: #1f1f1f;
+}
+body header a {
+  text-decoration: none;
+}
+body header a#Search_Header_Button.btn.btn-outline-warning.hvr-grow.text-center h5 {
+  margin-bottom: 0;
+}
+body header a#navbar-brand.button.hvr-grow {
+  text-decoration: none;
+  color: white;
+  margin-right: 3%;
+}
+body header .navbar.Text.fs-5.fw-bolder {
+  margin-top: 2%;
+}
+body header li#Search.nav-item {
+  margin-top: 4%;
+}
+@media (min-width: 768px) {
+  body header li#Search.nav-item {
+    margin-top: 1%;
+  }
+}
+@media (min-width: 991px) {
+  body header li#Search.nav-item {
+    margin-bottom: 2%;
+  }
+}
+@media (min-width: 1399px) {
+  body header li#Search.nav-item {
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}
+@media (min-width: 375px) {
+  body header li.nav-item {
+    margin-right: 1%;
+  }
+}
+@media (min-width: 414px) {
+  body header li.nav-item {
+    margin-right: 2%;
+  }
+}
+@media (min-width: 768px) {
+  body header li.nav-item {
+    margin-right: 0%;
+  }
+}
+body header .modal-content .modal-footer button.btn.btn-dark a {
+  color: white;
+}
+body header .d-flex button {
+  margin-right: 3%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .container#MultfilmsPage {
+  color: white;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+}
+body .container#MultfilmsPage .slick-list {
+  overflow: hidden;
+}
+body .container#MultfilmsPage .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+body .container#MultfilmsPage .slider {
+  position: relative;
+  padding: 0 60px;
+}
+body .container#MultfilmsPage .slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  border: solid 1px #212529;
+  border-color: 1em;
+}
+body .container#MultfilmsPage .slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+body .container#MultfilmsPage .slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../img2/sl-arrow_l.svg") 0 0/100% no-repeat;
+}
+body .container#MultfilmsPage .slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../img2/sl-arrow_r.svg") 0 0/100% no-repeat;
+}
+body .container#MultfilmsPage .slider__item {
+  text-align: center;
+}
+body .container#MultfilmsPage .slider__item img {
+  width: 60%;
+  border: solid 3px #212529;
+  border-radius: 10px;
+}
+body .container#MultfilmsPage a {
+  color: rgba(255, 255, 255, 0.7);
+}
+body .container#MultfilmsPage a:hover {
+  color: white;
+}
+body .container#MultfilmsPage .h1, body .container#MultfilmsPage .h2, body .container#MultfilmsPage .h3, body .container#MultfilmsPage .h4, body .container#MultfilmsPage .h5 {
+  color: black;
+}
+body .container#MultfilmsPage #Multfilms.HeaderBar {
+  margin-top: 2%;
+}
+body .container#MultfilmsPage #Multfilms.HeaderBar h1 {
+  margin-bottom: 0;
+}
+body .container#MultfilmsPage .section-title {
+  margin-top: 2%;
+  color: rgba(255, 255, 255, 0.7);
+}
+body .container#MultfilmsPage .row#Multfilms_row .col-xxl-2.col-md-3.col-6.allign-items-center a {
+  width: 100%;
+}
+body .container#MultfilmsPage .row#Multfilms_row .col-xxl-2.col-md-3.col-6.allign-items-center a .MultFilms_Img img {
+  width: 100%;
+  border: solid 2px #212529;
+  border-radius: 10px;
+}
+body .container#MultfilmsPage .row#Multfilms_row .col-xxl-2.col-md-3.col-6.allign-items-center a .content.text-center {
+  color: white;
+}
+body .container#MultfilmsPage .row#Multfilms_row .col-xxl-2.col-md-3.col-6.allign-items-center a .content.text-center p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5%;
+}
+
+footer {
+  font-size: 1.4em;
+}
+footer section.footer .container {
+  margin-top: 5%;
+}
+footer section.footer .container p {
+  color: white;
+  margin-bottom: 0;
+}
+footer section.footer .container hr {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer section.footer .container .row.allign-items-center .col-xxl-4.col-md-4.col-sm-4 {
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+footer section.footer .container .row.allign-items-center .col-xxl-4.col-md-4.col-sm-4 select.form-select.form-select-lg.mb-3 {
+  border-color: rgba(31, 31, 31, 0.9);
+}
+footer section.footer .container #Services_support.container {
+  margin-top: 0;
+}
