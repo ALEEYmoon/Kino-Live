@@ -32,16 +32,27 @@ body{
             
         }
         li#Search.nav-item { 
-            margin-top: 4%; 
             @media (min-width: 768px) {
                 margin-top: 1%;
             }
             @media (min-width: 991px) {
                 margin-bottom: 2%;
-            }
+            } 
             @media (min-width: 1399px) {
                 margin-top: 0%;
                 margin-bottom: 0%;
+            }
+            input {
+                @media(min-width: 1399px) {
+                    margin-right: 0;
+                    width: 88%;
+                }
+            }
+            form.d-flex {
+                @media(min-width: 1399px) {
+                    margin-top: 10%;
+                    margin-left: 10%;
+                }
             }
         }
         li.nav-item {

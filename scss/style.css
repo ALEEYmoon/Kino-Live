@@ -17,15 +17,26 @@ body {
       margin-right: 3%; }
     body header .navbar.Text.fs-5.fw-bolder {
       margin-top: 2%; }
-    @media (min-width: 991px) {
-      body header li#Search.nav-item {
-        margin-bottom: 2%; } }
-    @media (min-width: 1400px) {
-      body header li#Search.nav-item {
-        margin-bottom: 0%; } }
-    @media (min-width: 319px) {
-      body header li#Search.nav-item form.d-flex {
-        margin-top: 0%; } }
+    body header li#Search.nav-item {
+      margin-top: 4%; }
+      @media (min-width: 768px) {
+        body header li#Search.nav-item {
+          margin-top: 1%; } }
+      @media (min-width: 991px) {
+        body header li#Search.nav-item {
+          margin-bottom: 2%; } }
+      @media (min-width: 1399px) {
+        body header li#Search.nav-item {
+          margin-top: 0%;
+          margin-bottom: 0%; } }
+      @media (min-width: 1399px) {
+        body header li#Search.nav-item form.d-flex input {
+          height: 80%;
+          margin-top: 3%; } }
+      @media (min-width: 1399px) {
+        body header li#Search.nav-item form.d-flex a {
+          height: 80%;
+          margin-top: 3%; } }
     @media (min-width: 375px) {
       body header li.nav-item {
         margin-right: 1%; } }
@@ -38,7 +49,9 @@ body {
     body header .modal-content .modal-footer button.btn.btn-dark a {
       color: white; }
     body header .d-flex button {
-      margin: 0 5%; }
+      margin-right: 3%;
+      margin-top: 0;
+      margin-bottom: 0; }
   body .container#MultfilmsPage {
     color: white;
     /* Слайдер */

@@ -41,7 +41,21 @@ header li#Search.nav-item {
 }
 @media (min-width: 1399px) {
   header li#Search.nav-item form.d-flex {
-    margin-top: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1399px) {
+  header li#Search.nav-item form.d-flex input {
+    height: 80%;
+    margin-top: 3%;
+  }
+}
+@media (min-width: 1399px) {
+  header li#Search.nav-item form.d-flex a {
+    height: 80%;
+    margin-top: 3%;
   }
 }
 @media (min-width: 375px) {
